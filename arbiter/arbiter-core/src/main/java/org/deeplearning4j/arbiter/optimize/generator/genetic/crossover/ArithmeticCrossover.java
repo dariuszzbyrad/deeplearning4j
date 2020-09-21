@@ -19,6 +19,7 @@ package org.deeplearning4j.arbiter.optimize.generator.genetic.crossover;
 import org.apache.commons.math3.random.JDKRandomGenerator;
 import org.apache.commons.math3.random.RandomGenerator;
 import org.apache.commons.math3.random.SynchronizedRandomGenerator;
+import org.deeplearning4j.arbiter.optimize.generator.genetic.crossover.parentselection.CaruselTwoParentSelection;
 import org.deeplearning4j.arbiter.optimize.generator.genetic.crossover.parentselection.RandomTwoParentSelection;
 import org.deeplearning4j.arbiter.optimize.generator.genetic.crossover.parentselection.TwoParentSelection;
 import org.nd4j.common.base.Preconditions;
@@ -80,7 +81,8 @@ public class ArithmeticCrossover extends TwoParentsCrossoverOperator {
             }
 
             if (parentSelection == null) {
-                parentSelection = new RandomTwoParentSelection();
+                //parentSelection = new RandomTwoParentSelection();
+                parentSelection = new CaruselTwoParentSelection();
             }
 
             return new ArithmeticCrossover(this);

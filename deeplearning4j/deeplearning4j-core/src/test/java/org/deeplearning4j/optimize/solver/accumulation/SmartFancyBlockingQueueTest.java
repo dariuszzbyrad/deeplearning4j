@@ -42,9 +42,9 @@ public class SmartFancyBlockingQueueTest extends BaseDL4JTest {
 
         for (int e = 0; e < 6; e++) {
             queue.put(Nd4j.create(5, 5).assign(e));
-        };
+        }
 
-        assertEquals(6, queue.size());
+		assertEquals(6, queue.size());
 
         for (int e = 6; e < 10; e++) {
             queue.put(Nd4j.create(5, 5).assign(e));

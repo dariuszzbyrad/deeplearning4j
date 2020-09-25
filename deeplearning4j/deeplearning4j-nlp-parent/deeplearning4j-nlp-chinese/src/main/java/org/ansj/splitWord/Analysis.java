@@ -68,9 +68,9 @@ public abstract class Analysis {
         this.isNumRecognition = MyStaticValue.isNumRecognition;
         this.isQuantifierRecognition = MyStaticValue.isQuantifierRecognition;
         this.isRealName = MyStaticValue.isRealName;
-    };
+    }
 
-    private LinkedList<Term> terms = new LinkedList<>();
+	private LinkedList<Term> terms = new LinkedList<>();
 
     /**
      * while 循环调用.直到返回为null则分词结束

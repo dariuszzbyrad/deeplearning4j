@@ -586,8 +586,8 @@ public abstract class BaseCpuDataBuffer extends BaseDataBuffer implements Deallo
         super(pointer, indexer, length);
 
         ptrDataBuffer = OpaqueDataBuffer.externalizedDataBuffer(length, dataType(), this.pointer, null);
-        Nd4j.getDeallocatorService().pickObject(this);;
-    }
+        Nd4j.getDeallocatorService().pickObject(this);
+	}
 
     /**
      *

@@ -22,5 +22,5 @@ package org.nd4j.autodiff.listeners;
  * STOP: Terminate training at the current point, irrespective of how many total epochs were specified when calling fit.<br>
  */
 public enum ListenerResponse {
-    CONTINUE, STOP;
+    CONTINUE, STOP
 }

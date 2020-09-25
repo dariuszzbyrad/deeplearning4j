@@ -30,9 +30,9 @@ public class TermNatures implements Serializable {
 
     public static final TermNatures NW = new TermNatures(TermNature.NW);
 
-    public static final TermNatures NULL = new TermNatures(TermNature.NULL);;
+    public static final TermNatures NULL = new TermNatures(TermNature.NULL);
 
-    /**
+	/**
      * 关于这个term的所有词性
      */
     public TermNature[] termNatures = null;

@@ -34,9 +34,9 @@ import org.nd4j.linalg.dataset.api.iterator.MultiDataSetIterator;
 public class ROCScoreCalculator extends BaseIEvaluationScoreCalculator<Model, IEvaluation> {
 
     public enum ROCType {ROC, BINARY, MULTICLASS}
-    public enum Metric {AUC, AUPRC};
+    public enum Metric {AUC, AUPRC}
 
-    protected final ROCType type;
+	protected final ROCType type;
     protected final Metric metric;
 
     public ROCScoreCalculator(ROCType type, DataSetIterator iterator) {

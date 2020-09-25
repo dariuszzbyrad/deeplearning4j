@@ -43,9 +43,9 @@ import java.util.*;
 @Accessors(fluent = true)
 @Getter
 public class TestCase {
-    public enum TestSerialization {BEFORE_EXEC, AFTER_EXEC, BOTH, NONE};
+    public enum TestSerialization {BEFORE_EXEC, AFTER_EXEC, BOTH, NONE}
 
-    public static final boolean GC_DEFAULT_PRINT = false;
+	public static final boolean GC_DEFAULT_PRINT = false;
     public static final boolean GC_DEFAULT_EXIT_FIRST_FAILURE = false;
     public static final boolean GC_DEFAULT_DEBUG_MODE = false;
     public static final double GC_DEFAULT_EPS = 1e-5;

@@ -25,5 +25,5 @@ public enum ScreenFormat {
     BGRA32,
     ABGR32,
     GRAY8,
-    DOOM_256_COLORS8;
+    DOOM_256_COLORS8
 }

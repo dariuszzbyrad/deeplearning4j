@@ -132,6 +132,6 @@ public class CNN3DTestCases {
             }
 
         };
-    };
+    }
 
 }

@@ -63,5 +63,5 @@ public enum ScreenResolution {
     RES_1600X1000,  // 16:10
     RES_1600X1200,  // 4:3
 
-    RES_1920X1080;  // 16:9
+    RES_1920X1080  // 16:9
 }

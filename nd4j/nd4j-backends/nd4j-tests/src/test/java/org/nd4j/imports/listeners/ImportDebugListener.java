@@ -38,9 +38,9 @@ public class ImportDebugListener extends BaseListener {
         return true;
     }
 
-    public enum OnFailure {EXCEPTION, LOG};
+    public enum OnFailure {EXCEPTION, LOG}
 
-    private File baseDir;
+	private File baseDir;
     private FilenameFunction function;
     private boolean checkShapesOnly;
     private double fpEps;

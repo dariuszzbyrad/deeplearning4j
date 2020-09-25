@@ -22,7 +22,7 @@ import org.deeplearning4j.core.storage.StatsStorageRouter;
 import org.deeplearning4j.core.storage.listener.RoutingIterationListener;
 import org.deeplearning4j.optimize.solvers.accumulation.EncodingHandler;
 import org.deeplearning4j.optimize.solvers.accumulation.encoding.threshold.AdaptiveThresholdAlgorithm;
-import org.nd4j.linalg.dataset.AsyncDataSetIterator;;
+import org.nd4j.linalg.dataset.AsyncDataSetIterator;
 import org.nd4j.linalg.dataset.AsyncMultiDataSetIterator;
 import org.deeplearning4j.datasets.iterator.DummyBlockDataSetIterator;
 import org.deeplearning4j.datasets.iterator.DummyBlockMultiDataSetIterator;

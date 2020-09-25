@@ -402,8 +402,8 @@ public class VpTreeNodeTest extends BaseDL4JTest {
         i = 0;
         for (DataPoint p : results)
             sortedResults.putRow(i++, p.getPoint());
-        INDArray[] sortedWithIndices = Nd4j.sortWithIndices(sortedResults, dimensionToSort, true);;
-        sortedResults = sortedWithIndices[1];
+        INDArray[] sortedWithIndices = Nd4j.sortWithIndices(sortedResults, dimensionToSort, true);
+		sortedResults = sortedWithIndices[1];
         assertEquals(trueResults.sumNumber().doubleValue(), sortedResults.sumNumber().doubleValue(), 1e-5);
     }
 

@@ -77,9 +77,9 @@ public class ScoringModelTest {
       return null;
     }
 
-  };
+  }
 
-  protected List<Feature> featuresList(int numFeatures) throws Exception {
+	protected List<Feature> featuresList(int numFeatures) throws Exception {
     final ArrayList<Feature> features = new ArrayList<Feature>();
     for (int ii=1; ii<=numFeatures; ++ii)
     {

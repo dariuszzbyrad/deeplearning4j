@@ -65,8 +65,8 @@ public class HashingBalancedPartitioner extends Partitioner {
         }
         this.partitionWeightsByClass = partitionWeightsByClass; // p_(j, i)
 
-        List<List<Double>> jumpsByClass = new ArrayList<>();;
-        for (int j = 0; j < numClasses; j++) {
+        List<List<Double>> jumpsByClass = new ArrayList<>();
+		for (int j = 0; j < numClasses; j++) {
             Double totalImbalance = 0D; // i_j = sum(max(1 - p_(j, i), 0) , i = 1..numPartitions)
             for (int i = 0; i < numPartitions; i++) {
                 totalImbalance += partitionWeightsByClass.get(j).get(i) >= 0

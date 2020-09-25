@@ -951,9 +951,7 @@ public abstract class AbstractSession<T, O> {
      */
     protected enum ExecType {OP, VARIABLE, CONSTANT, PLACEHOLDER, SWITCH_L, SWITCH_R, EXEC_START, CONTROL_DEP}
 
-    ;
-
-    /**
+	/**
      * ExecStep represents a single execution step, for a single op (or variable/constant etc) at a specific frame/iteration
      */
     @Getter
@@ -1000,5 +998,4 @@ public abstract class AbstractSession<T, O> {
         }
     }
 
-    ;
 }

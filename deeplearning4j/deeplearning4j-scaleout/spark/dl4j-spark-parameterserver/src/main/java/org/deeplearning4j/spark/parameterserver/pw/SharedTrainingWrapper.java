@@ -350,8 +350,8 @@ public class SharedTrainingWrapper {
                                     log.warn("No Updater in the model");
                                     return null;
                                 }
-                            };
-                        });
+                            }
+						});
 
                         ModelParameterServer.getInstance().addUpdatesSubscriber(consumer);
                         ModelParameterServer.getInstance().addModelParamsSubscriber(modelParamsSupplier);

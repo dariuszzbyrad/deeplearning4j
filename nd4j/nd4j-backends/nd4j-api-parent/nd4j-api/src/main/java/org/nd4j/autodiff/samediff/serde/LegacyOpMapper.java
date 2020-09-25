@@ -187,8 +187,8 @@ public class LegacyOpMapper {
                 return FloorDivOp.class;
             case 23:
                 return TruncateDivOp.class;
-            case 24:;
-                return And.class;
+            case 24:
+				return And.class;
             case 25:
                 return Or.class;
             case 26:

@@ -102,9 +102,9 @@ public class TestCustomUpdater extends BaseDL4JTest {
         net2.setLabels(labels);
 
         net1.computeGradientAndScore();
-        net2.computeGradientAndScore();;
+        net2.computeGradientAndScore();
 
-        assertEquals(net1.getFlattenedGradients(), net2.getFlattenedGradients());
+		assertEquals(net1.getFlattenedGradients(), net2.getFlattenedGradients());
     }
 
 }

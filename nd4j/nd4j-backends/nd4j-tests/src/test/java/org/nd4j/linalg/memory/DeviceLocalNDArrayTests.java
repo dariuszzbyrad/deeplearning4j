@@ -83,8 +83,8 @@ public class DeviceLocalNDArrayTests extends BaseNd4jTest {
                 @Override
                 public void run() {
                     deviceLocal.get().add(1.f);
-                    Nd4j.getExecutioner().commit();;
-                }
+                    Nd4j.getExecutioner().commit();
+				}
             });
 
             t.start();

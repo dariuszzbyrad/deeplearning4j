@@ -12,9 +12,9 @@ import java.nio.ByteBuffer;
  */
 public interface TFTensorMapper<J,B extends Buffer> {
 
-    enum ValueSource {EMPTY, VALUE_COUNT, BINARY};
+    enum ValueSource {EMPTY, VALUE_COUNT, BINARY}
 
-    DataType dataType();
+	DataType dataType();
 
     long[] shape();
 

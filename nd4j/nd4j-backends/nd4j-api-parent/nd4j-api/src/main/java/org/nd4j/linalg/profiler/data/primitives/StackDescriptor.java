@@ -42,8 +42,7 @@ public class StackDescriptor {
 
         // in tests it's quite possible to have no DefaultOpExecutioner calls being used
         if (start == stack.length) {
-            ;
-            for (start = 0; start < stack.length; start++) {
+			for (start = 0; start < stack.length; start++) {
                 if (!stack[start + 1].getClassName().contains("OpProfiler")
                                 && !stack[start + 1].getClassName().contains("StackAggregator"))
                     break;

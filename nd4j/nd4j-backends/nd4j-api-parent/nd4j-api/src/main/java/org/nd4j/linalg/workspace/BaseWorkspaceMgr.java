@@ -171,8 +171,8 @@ public abstract class BaseWorkspaceMgr<T extends Enum<T>> implements WorkspaceMg
             throw new ND4JWorkspaceException("Assertion failed: expected current workspace to be \"" + getWorkspaceName(arrayType)
                     + "\" (for array type " + arrayType + ") - actual current workspace is " + (curr == null ? null : curr.getId())
                     + (msg == null ? "" : ": " + msg));
-        };
-    }
+        }
+	}
 
     @Override
     public INDArray leverageTo(@NonNull T arrayType, @NonNull INDArray array) {

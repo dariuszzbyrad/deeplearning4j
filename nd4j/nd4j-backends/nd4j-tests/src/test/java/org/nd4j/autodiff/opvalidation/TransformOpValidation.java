@@ -1115,8 +1115,7 @@ public class TransformOpValidation extends BaseOpValidation {
                     t = sd.neq(in1, in2);
                     opName = "neq";
                     tc.expectedOutput(t.name(), ia.neq(ib)).gradientCheck(false);
-                    ;
-                    break;
+					break;
                 case 8:
                     t = sd.gt(in1, in2);
                     opName = "gt";

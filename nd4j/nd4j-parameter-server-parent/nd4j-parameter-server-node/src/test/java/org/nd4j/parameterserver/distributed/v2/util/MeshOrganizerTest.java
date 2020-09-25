@@ -327,7 +327,7 @@ public class MeshOrganizerTest extends BaseND4JTest {
             mesh1.addNode(java.util.UUID.randomUUID().toString());
 
 
-        try(val baos = new ByteArrayOutputStream();) {
+        try(val baos = new ByteArrayOutputStream()) {
             SerializationUtils.serialize(mesh1, baos);
 
             try(val bais = new ByteArrayInputStream(baos.toByteArray())) {

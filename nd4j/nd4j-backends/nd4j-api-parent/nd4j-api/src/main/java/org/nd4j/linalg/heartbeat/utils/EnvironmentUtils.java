@@ -66,12 +66,12 @@ public class EnvironmentUtils {
 
                     return random.nextLong();
                 } catch (Exception e) {
-                    ; // do nothing, just skip to next interface
+					// do nothing, just skip to next interface
                 }
             }
 
         } catch (Exception e) {
-            ; // do nothing here
+			// do nothing here
         }
 
         return ret;

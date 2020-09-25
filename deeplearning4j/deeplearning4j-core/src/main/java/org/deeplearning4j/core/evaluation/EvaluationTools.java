@@ -174,9 +174,9 @@ public class EvaluationTools {
             if (classNames != null && classNames.size() > i) {
                 headerText += " (" + classNames.get(i) + ")";
             }
-            headerText += " vs. All";;
+            headerText += " vs. All";
 
-            Component headerDivPad = new ComponentDiv(HEADER_DIV_PAD_STYLE);
+			Component headerDivPad = new ComponentDiv(HEADER_DIV_PAD_STYLE);
             components.add(headerDivPad);
 
             Component headerDivLeft = new ComponentDiv(HEADER_DIV_TEXT_PAD_STYLE);

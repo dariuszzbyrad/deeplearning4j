@@ -181,8 +181,8 @@ public class SparkWord2Vec extends SparkSequenceVectors<VocabWord> {
 
         @Override
         public Builder setLearningRate(double lr) {
-            super.setLearningRate(lr);;
-            return this;
+            super.setLearningRate(lr);
+			return this;
         }
 
         @Override

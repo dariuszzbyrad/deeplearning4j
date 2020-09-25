@@ -20,9 +20,9 @@ public class SplitWord {
 
     public SplitWord(Model model) {
         this.model = model;
-    };
+    }
 
-    public List<String> cut(char[] chars) {
+	public List<String> cut(char[] chars) {
         return cut(new String(chars));
     }
 

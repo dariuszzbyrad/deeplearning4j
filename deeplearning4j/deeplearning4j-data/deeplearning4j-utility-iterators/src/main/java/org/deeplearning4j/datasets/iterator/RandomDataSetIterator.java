@@ -32,9 +32,9 @@ public class RandomDataSetIterator extends MultiDataSetWrapperIterator {
         public RandomMultiDataSetIterator.Values toMdsValues(){
             return RandomMultiDataSetIterator.Values.valueOf(this.toString());
         }
-    };
+    }
 
-    /**
+	/**
      * @param numMiniBatches Number of minibatches per epoch
      * @param featuresShape  Features shape
      * @param labelsShape    Labels shape

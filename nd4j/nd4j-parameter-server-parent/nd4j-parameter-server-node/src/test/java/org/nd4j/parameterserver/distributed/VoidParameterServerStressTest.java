@@ -282,9 +282,9 @@ public class VoidParameterServerStressTest extends BaseND4JTest {
 
         log.info("p50: {} us", newTimes.get(newTimes.size() / 2) / 1000);
 
-        parameterServer.shutdown();;
+        parameterServer.shutdown();
 
-        for (VoidParameterServer server : shards) {
+		for (VoidParameterServer server : shards) {
             server.shutdown();
         }
     }

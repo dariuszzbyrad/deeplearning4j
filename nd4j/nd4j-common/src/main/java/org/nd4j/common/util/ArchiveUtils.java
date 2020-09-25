@@ -148,7 +148,7 @@ public class ArchiveUtils {
                 else {
                     int count;
                     try(FileOutputStream fos = new FileOutputStream(dest + File.separator + entry.getName());
-                        BufferedOutputStream destStream = new BufferedOutputStream(fos, BUFFER);) {
+                        BufferedOutputStream destStream = new BufferedOutputStream(fos, BUFFER)) {
                         while ((count = tarIn.read(data, 0, BUFFER)) != -1) {
                             destStream.write(data, 0, count);
                         }

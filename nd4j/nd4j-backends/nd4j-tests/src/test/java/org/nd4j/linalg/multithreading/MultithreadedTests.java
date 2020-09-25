@@ -70,8 +70,8 @@ public class MultithreadedTests extends BaseNd4jTest {
 
                         list.add(array);
                     }
-                };
-            });
+                }
+			});
 
             thread.start();
             thread.join();

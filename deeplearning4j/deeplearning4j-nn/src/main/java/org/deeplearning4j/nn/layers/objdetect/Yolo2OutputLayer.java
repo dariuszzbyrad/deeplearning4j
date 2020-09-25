@@ -456,8 +456,8 @@ public class Yolo2OutputLayer extends AbstractLayer<org.deeplearning4j.nn.conf.l
         Broadcast.copy(gridY, linspaceY, gridY, 0);
 
         //Calculate X/Y position overall (in grid box units) from "position in current grid box" format
-        INDArray predictedXY = predictedXYinGridBox.ulike();;
-        Broadcast.add(predictedXYinGridBox, grid, predictedXY, 2,3,4); // [2, H, W] to [mb, b, 2, H, W]
+        INDArray predictedXY = predictedXYinGridBox.ulike();
+		Broadcast.add(predictedXYinGridBox, grid, predictedXY, 2,3,4); // [2, H, W] to [mb, b, 2, H, W]
 
 
         INDArray halfWH = predictedWH.mul(0.5);
@@ -545,8 +545,8 @@ public class Yolo2OutputLayer extends AbstractLayer<org.deeplearning4j.nn.conf.l
         predictedHW.get(all(), all(), point(0), all(), all()).assign(predictedWH.get(all(), all(), point(1), all(), all()));
         predictedHW.get(all(), all(), point(1), all(), all()).assign(predictedWH.get(all(), all(), point(0), all(), all()));
 
-        INDArray Ihw = predictedHW.ulike();;
-        Broadcast.mul(predictedHW, intersectionArea, Ihw, 0, 1, 3, 4 );    //Predicted_wh: [mb, b, 2, h, w]; intersection: [mb, b, h, w]
+        INDArray Ihw = predictedHW.ulike();
+		Broadcast.mul(predictedHW, intersectionArea, Ihw, 0, 1, 3, 4 );    //Predicted_wh: [mb, b, 2, h, w]; intersection: [mb, b, h, w]
 
         INDArray dIOU_dwh = Nd4j.createUninitialized(predictedHW.dataType(), new long[]{mb, b, 2, h, w}, 'c');
         Broadcast.mul(dI_dwh, uPlusI, dIOU_dwh, 0, 1, 3, 4);

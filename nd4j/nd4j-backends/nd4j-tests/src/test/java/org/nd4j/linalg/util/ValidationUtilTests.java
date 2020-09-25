@@ -408,10 +408,10 @@ public class ValidationUtilTests extends BaseNd4jTest {
         SDVariable loss = v.std(true);
 
         File fOrig = new File(f, "sd_fb.fb");
-        sd.asFlatFile(fOrig);;
+        sd.asFlatFile(fOrig);
 
 
-        //Test not existent file:
+		//Test not existent file:
         File fNonExistent = new File("doesntExist.fb");
         ValidationResult vr0 = Nd4jValidator.validateSameDiffFlatBuffers(fNonExistent);
         assertFalse(vr0.isValid());

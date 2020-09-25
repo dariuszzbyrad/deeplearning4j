@@ -332,8 +332,8 @@ public abstract  class BaseTransport  implements Transport {
                 if (!isLoopedNode(n, originatorId, relayId)) {
                     sendMessage(voidMessage, n.getId());
                 }
-            };
-        }
+            }
+		}
     }
 
     protected boolean isLoopedNode(@NonNull MeshOrganizer.Node node, @NonNull String originatorId, @NonNull String relayId) {

@@ -218,8 +218,8 @@ public class Frame<T extends TrainingMessage> implements Serializable, Iterable<
                 //log.info("Firing message {}; originator: {}; frameId: {}; taskId: {}", message.getClass().getSimpleName(), message.getOriginatorId(), message.getFrameId(), message.getTaskId());
                 message.processMessage();
             }
-        } ;
-    }
+        }
+	}
 
     @Override
     public boolean isJoinSupported() {

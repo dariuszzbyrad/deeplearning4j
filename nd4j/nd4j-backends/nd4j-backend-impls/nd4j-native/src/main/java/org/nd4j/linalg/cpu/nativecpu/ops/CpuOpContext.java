@@ -75,8 +75,8 @@ public class CpuOpContext extends BaseOpContext implements OpContext, Deallocata
         if (arguments.length > 0) {
             super.setTArguments(arguments);
             nativeOps.setGraphContextTArguments(context, new DoublePointer(arguments), arguments.length);
-        };
-    }
+        }
+	}
 
     @Override
     public void setDArguments(DataType... arguments) {
@@ -87,8 +87,8 @@ public class CpuOpContext extends BaseOpContext implements OpContext, Deallocata
                 args[e] = arguments[e].toInt();
 
             nativeOps.setGraphContextDArguments(context, new IntPointer(args), arguments.length);
-        };
-    }
+        }
+	}
 
     @Override
     public void setRngStates(long rootState, long nodeState) {

@@ -74,9 +74,9 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class CheckpointListener extends BaseListener implements Serializable {
 
-    private enum KeepMode {ALL, LAST, LAST_AND_EVERY};
+    private enum KeepMode {ALL, LAST, LAST_AND_EVERY}
 
-    private File rootDir;
+	private File rootDir;
     private String fileNamePrefix;
     private KeepMode keepMode;
     private int keepLast;

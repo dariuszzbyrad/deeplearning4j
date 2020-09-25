@@ -82,8 +82,7 @@ public class Squeeze extends DynamicCustomOp {
         for (int d : squeezeDims) {
             ret = sameDiff.expandDims(ret, d);
         }
-        ;
-        return Arrays.asList(ret);
+		return Arrays.asList(ret);
     }
 
     @Override

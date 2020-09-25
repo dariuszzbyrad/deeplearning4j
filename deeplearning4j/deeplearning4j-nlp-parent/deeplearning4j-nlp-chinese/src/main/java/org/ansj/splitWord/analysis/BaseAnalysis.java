@@ -43,9 +43,9 @@ public class BaseAnalysis extends Analysis {
         return merger.merger();
     }
 
-    public BaseAnalysis() {};
+    public BaseAnalysis() {}
 
-    public BaseAnalysis(Reader reader) {
+	public BaseAnalysis(Reader reader) {
         super.resetContent(new AnsjReader(reader));
     }
 

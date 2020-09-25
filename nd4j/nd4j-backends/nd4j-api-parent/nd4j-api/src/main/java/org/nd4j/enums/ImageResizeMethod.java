@@ -34,5 +34,5 @@ public enum ImageResizeMethod {
   ResizeGaussian,
   ResizeLanczos3,
   ResizeLanczos5,
-  ResizeMitchellcubic;
+  ResizeMitchellcubic
 }

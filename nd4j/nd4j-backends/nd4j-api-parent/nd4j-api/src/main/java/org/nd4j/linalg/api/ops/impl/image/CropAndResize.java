@@ -36,8 +36,9 @@ import java.util.*;
  */
 @NoArgsConstructor
 public class CropAndResize extends DynamicCustomOp {
-    public enum Method {BILINEAR, NEAREST};
-    protected Method method = Method.BILINEAR;
+    public enum Method {BILINEAR, NEAREST}
+
+	protected Method method = Method.BILINEAR;
     protected double extrapolationValue = 0.0;
 
     public CropAndResize(@NonNull SameDiff sameDiff, @NonNull SDVariable image, @NonNull SDVariable cropBoxes, @NonNull SDVariable boxIndices,

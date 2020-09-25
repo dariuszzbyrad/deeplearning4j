@@ -76,8 +76,7 @@ public abstract class AbstractResource implements Resource {
 
             int read;
             for (byte[] buf = new byte[255]; (read = is.read(buf)) != -1; size += (long) read) {
-                ;
-            }
+			}
 
             long var6 = size;
             return var6;
@@ -85,8 +84,7 @@ public abstract class AbstractResource implements Resource {
             try {
                 is.close();
             } catch (IOException var14) {
-                ;
-            }
+			}
 
         }
     }

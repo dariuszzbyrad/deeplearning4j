@@ -31,8 +31,8 @@ public class WorkspacesDebugAction implements EnvironmentalAction {
         switch (value.toUpperCase()) {
             case "SPILL_EVERYTHING": {
                     Nd4j.getWorkspaceManager().setDebugMode(DebugMode.SPILL_EVERYTHING);
-                };
-                break;
+                }
+			break;
             case "BYPASS_EVERYTHING": {
                     Nd4j.getWorkspaceManager().setDebugMode(DebugMode.BYPASS_EVERYTHING);
                 }

@@ -88,9 +88,9 @@ public class MKLDNNConvHelper implements ConvolutionHelper {
                     format == CNN2DFormat.NCHW ? 0 : 1,  //0=NCHW, 1=NHWC
                     1   //Weight format: 1 - [oC, iC, kH, kW]
             );
-        };
+        }
 
-        INDArray gradAtInput = workspaceMgr.createUninitialized(ArrayType.ACTIVATION_GRAD, input.dataType(), input.shape());
+		INDArray gradAtInput = workspaceMgr.createUninitialized(ArrayType.ACTIVATION_GRAD, input.dataType(), input.shape());
 
         INDArray[] inputsArr = biasGradView == null ? new INDArray[]{input, weights, delta} : new INDArray[]{input, weights, bias, delta};
         INDArray[] outputArr = biasGradView == null ? new INDArray[]{gradAtInput, weightGradView} : new INDArray[]{gradAtInput, weightGradView, biasGradView};
@@ -149,9 +149,9 @@ public class MKLDNNConvHelper implements ConvolutionHelper {
                     format == CNN2DFormat.NCHW ? 0 : 1,  //0=NCHW, 1=NHWC
                     1   //Weight format: 1 - [oC, iC, kH, kW]
             );
-        };
+        }
 
-        int outDepth = (int) weights.size(0);
+		int outDepth = (int) weights.size(0);
         long[] outShape = (format == CNN2DFormat.NCHW) ? new long[]{input.size(0), outDepth, outSize[0], outSize[1]} : new long[]{input.size(0), outSize[0], outSize[1], outDepth};
         INDArray out = workspaceMgr.createUninitialized(ArrayType.ACTIVATIONS, input.dataType(), outShape);
 

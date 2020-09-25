@@ -55,8 +55,7 @@ public abstract class ClassUtils {
         try {
             cl = Thread.currentThread().getContextClassLoader();
         } catch (Throwable var2) {
-            ;
-        }
+		}
 
         if (cl == null) {
             cl = ClassUtils.class.getClassLoader();
@@ -123,8 +122,7 @@ public abstract class ClassUtils {
                         try {
                             return classLoaderToUse.loadClass(innerClassName);
                         } catch (ClassNotFoundException var8) {
-                            ;
-                        }
+						}
                     }
 
                     throw var9;
@@ -457,8 +455,7 @@ public abstract class ClassUtils {
                 Method ex = ReflectionUtils.findMethod(targetClass, method.getName(), method.getParameterTypes());
                 return ex != null ? ex : method;
             } catch (AccessControlException var4) {
-                ;
-            }
+			}
         }
 
         return method;

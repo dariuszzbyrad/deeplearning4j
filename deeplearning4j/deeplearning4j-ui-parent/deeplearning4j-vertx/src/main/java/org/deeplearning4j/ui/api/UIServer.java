@@ -177,5 +177,5 @@ public interface UIServer {
      */
     static Thread getShutdownHook() {
         return VertxUIServer.getShutdownHook();
-    };
+    }
 }
